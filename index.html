@@ -635,7 +635,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 165
 
 {
-  "timestamp" : 1485463434349,
+  "timestamp" : 1505814713633,
   "status" : 405,
   "error" : "Method Not Allowed",
   "message" : "Request method 'DELETE' not supported",
@@ -665,7 +665,8 @@ Content-Length: 165
 <h4 id="example-request"><a class="link" href="#example-request">Example request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings' -i -H 'Content-Type: text/plain'</code></pre>
+<pre class="prettyprint highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings' -i \
+    -H 'Content-Type: text/plain'</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -745,7 +746,8 @@ Content-Length: 190
 <h4 id="example-request-2"><a class="link" href="#example-request-2">Example request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings?message=Hello' -i -H 'Content-Type: application/json'</code></pre>
+<pre class="prettyprint highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings?message=Hello' -i \
+    -H 'Content-Type: application/json'</code></pre>
 </div>
 </div>
 </div>
@@ -890,7 +892,9 @@ Content-Length: 37
 <h4 id="example-request-4"><a class="link" href="#example-request-4">Example request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings' -i -X POST -H 'Content-Type: application/json' -d '{"id":null,"message":"Hej JFokus!"}'</code></pre>
+<pre class="prettyprint highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings' -i -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{"id":null,"message":"Hallo ApiConference DE!"}'</code></pre>
 </div>
 </div>
 </div>
@@ -909,7 +913,7 @@ Location: http://localhost:8080/greetings/6</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-01-26 01:30:21 +01:00
+Last updated 2017-09-19 10:39:28 +02:00
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
