@@ -658,7 +658,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 219
 
 {
-  "timestamp" : "2017-12-07T14:21:52.822+0000",
+  "timestamp" : "2017-12-07T14:24:30.693+0000",
   "path" : "/greetings/",
   "message" : "Response status 405 with reason \"Request method 'DELETE' not supported\"",
   "status" : 405,
@@ -710,19 +710,10 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 338
+Content-Length: 86
 
 [ {
-  "id" : "5a294a15cba95030f538973a",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a294b0ccba9503162870b35",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a294cabcba950325d9684f8",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a294e81cba950331ada05a4",
+  "id" : "5a294f1fcba950339cd2ecd8",
   "message" : "Hello SpringOne Platform!"
 } ]</code></pre>
 </div>
@@ -738,7 +729,7 @@ Content-Length: 338
 <h4 id="greetings-get-example_curl_request"><a class="link" href="#greetings-get-example_curl_request">Curl request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5a294e81cba950331ada05a4' -i \
+<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5a294f1fcba950339cd2ecd8' -i \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -747,7 +738,7 @@ Content-Length: 338
 <h4 id="greetings-get-example_http_request"><a class="link" href="#greetings-get-example_http_request">HTTP request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5a294e81cba950331ada05a4 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5a294f1fcba950339cd2ecd8 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -762,7 +753,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 82
 
 {
-  "id" : "5a294e81cba950331ada05a4",
+  "id" : "5a294f1fcba950339cd2ecd8",
   "message" : "Hello SpringOne Platform!"
 }</code></pre>
 </div>
@@ -845,7 +836,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 82
 
 {
-  "id" : "5a294e81cba950331ada05a4",
+  "id" : "5a294f1fcba950339cd2ecd8",
   "message" : "Hello SpringOne Platform!"
 }</code></pre>
 </div>
