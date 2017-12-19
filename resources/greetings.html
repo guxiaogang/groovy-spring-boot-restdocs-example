@@ -459,10 +459,88 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 86
+Content-Length: 2270
 
 [ {
-  "id" : "5a294f1fcba950339cd2ecd8",
+  "id" : "5a296dddcba95039c91021f3",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a298183cba9503d9fc561c2",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2981bdcba9503ddb4be218",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2981ebcba9503de39890be",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a298257cba9503deb10d9b8",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a298285cba9503df3204416",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a29884ccba950403805de18",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a29a557cba9504817bbffc7",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a29a5a4cba95048536776c2",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a29a659cba9504862bf326c",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e84fff6519d5fd1be6188",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e857bf6519d6032fa1d3c",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e85d6f6519d6070322a79",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e8691f6519d60e111c0e1",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e86cbf6519d61105ece07",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e878bf6519d61a83d3655",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e87cbf6519d62589300d5",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e881df6519d62845faa83",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e889ff6519d62be0ea06c",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e8c25f6519d64813fc71e",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e8d50f6519d6517055f4b",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e8d8bf6519d65604fd7de",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a2e8dd3f6519d65819dd163",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a390bfa508cf51251436d54",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a3912ca48f2f813b05adba1",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a39136b48f2f813cdce90a1",
+  "message" : "Hello SpringOne Platform!"
+}, {
+  "id" : "5a39139048f2f813e7da1f62",
   "message" : "Hello SpringOne Platform!"
 } ]</code></pre>
 </div>
@@ -478,7 +556,7 @@ Content-Length: 86
 <h4 id="greetings-get-example_curl_request">Curl request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5a294f1fcba950339cd2ecd8' -i \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5a39139048f2f813e7da1f62' -i \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -487,7 +565,7 @@ Content-Length: 86
 <h4 id="greetings-get-example_http_request">HTTP request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5a294f1fcba950339cd2ecd8 HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5a39139048f2f813e7da1f62 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -502,7 +580,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 82
 
 {
-  "id" : "5a294f1fcba950339cd2ecd8",
+  "id" : "5a39139048f2f813e7da1f62",
   "message" : "Hello SpringOne Platform!"
 }</code></pre>
 </div>
@@ -537,12 +615,6 @@ Content-Length: 82
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The greeting&#8217;s message</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The greeting&#8217;s foo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 </tbody>
 </table>
@@ -585,7 +657,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 82
 
 {
-  "id" : "5a294f1fcba950339cd2ecd8",
+  "id" : "5a39139048f2f813e7da1f62",
   "message" : "Hello SpringOne Platform!"
 }</code></pre>
 </div>
@@ -597,7 +669,7 @@ Content-Length: 82
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-12-07 05:45:21 -08:00
+Last updated 2017-12-11 15:06:56 +01:00
 </div>
 </div>
 </body>
