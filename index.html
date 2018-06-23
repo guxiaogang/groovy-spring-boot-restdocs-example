@@ -658,7 +658,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 183
 
 {
-  "timestamp" : "2018-06-23T19:40:40.675+0000",
+  "timestamp" : "2018-06-23T19:45:24.417+0000",
   "path" : "/greetings/",
   "status" : 405,
   "error" : "Method Not Allowed",
@@ -710,11 +710,11 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 86
+Content-Length: 78
 
 [ {
-  "id" : "5b2ea239ee1d0308627e428a",
-  "message" : "Hello SpringOne Platform!"
+  "id" : "5b2ea354ee1d030e22ce2b50",
+  "message" : "Hello Warsaw JUG!"
 } ]</code></pre>
 </div>
 </div>
@@ -729,7 +729,7 @@ Content-Length: 86
 <h4 id="greetings-get-example_curl_request"><a class="link" href="#greetings-get-example_curl_request">Curl request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b2ea239ee1d0308627e428a' -i -X GET \
+<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b2ea354ee1d030e22ce2b50' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -738,7 +738,7 @@ Content-Length: 86
 <h4 id="greetings-get-example_http_request"><a class="link" href="#greetings-get-example_http_request">HTTP request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b2ea239ee1d0308627e428a HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b2ea354ee1d030e22ce2b50 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -750,11 +750,11 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 82
+Content-Length: 74
 
 {
-  "id" : "5b2ea239ee1d0308627e428a",
-  "message" : "Hello SpringOne Platform!"
+  "id" : "5b2ea354ee1d030e22ce2b50",
+  "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
 </div>
@@ -800,7 +800,7 @@ Content-Length: 82
     -H 'Content-Type: application/json' \
     -H 'Accept: application/json' \
     -d '{
-  "message" : "Hello SpringOne Platform!"
+  "message" : "Hello Warsaw JUG!"
 }'</code></pre>
 </div>
 </div>
@@ -812,11 +812,11 @@ Content-Length: 82
 <pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">POST /greetings/ HTTP/1.1
 Content-Type: application/json
 Accept: application/json
-Content-Length: 45
+Content-Length: 37
 Host: localhost:8080
 
 {
-  "message" : "Hello SpringOne Platform!"
+  "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
 </div>
@@ -827,11 +827,11 @@ Host: localhost:8080
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 82
+Content-Length: 74
 
 {
-  "id" : "5b2ea239ee1d0308627e428a",
-  "message" : "Hello SpringOne Platform!"
+  "id" : "5b2ea354ee1d030e22ce2b50",
+  "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
 </div>
