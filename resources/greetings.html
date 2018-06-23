@@ -438,7 +438,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h4 id="greetings-list-example_curl_request">Curl request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/' -i \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -459,88 +459,34 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 2270
+Content-Length: 758
 
 [ {
-  "id" : "5a296dddcba95039c91021f3",
+  "id" : "5a552529e53f5d712e4fecc1",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a298183cba9503d9fc561c2",
+  "id" : "5a5525d4e53f5d74ac325284",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a2981bdcba9503ddb4be218",
+  "id" : "5a55267be53f5d77ef9fe745",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a2981ebcba9503de39890be",
+  "id" : "5a5526bce53f5d792b6c50ad",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a298257cba9503deb10d9b8",
+  "id" : "5a552863e53f5d80dd80afbc",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a298285cba9503df3204416",
+  "id" : "5a552a6ae53f5d8abc3d2838",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a29884ccba950403805de18",
+  "id" : "5a552ae4e53f5d8d25e3a566",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a29a557cba9504817bbffc7",
+  "id" : "5b2e9e25ee1d03f3bb36c462",
   "message" : "Hello SpringOne Platform!"
 }, {
-  "id" : "5a29a5a4cba95048536776c2",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a29a659cba9504862bf326c",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e84fff6519d5fd1be6188",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e857bf6519d6032fa1d3c",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e85d6f6519d6070322a79",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e8691f6519d60e111c0e1",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e86cbf6519d61105ece07",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e878bf6519d61a83d3655",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e87cbf6519d62589300d5",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e881df6519d62845faa83",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e889ff6519d62be0ea06c",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e8c25f6519d64813fc71e",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e8d50f6519d6517055f4b",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e8d8bf6519d65604fd7de",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a2e8dd3f6519d65819dd163",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a390bfa508cf51251436d54",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a3912ca48f2f813b05adba1",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a39136b48f2f813cdce90a1",
-  "message" : "Hello SpringOne Platform!"
-}, {
-  "id" : "5a39139048f2f813e7da1f62",
+  "id" : "5b2e9e99ee1d03f5ec511972",
   "message" : "Hello SpringOne Platform!"
 } ]</code></pre>
 </div>
@@ -556,7 +502,7 @@ Content-Length: 2270
 <h4 id="greetings-get-example_curl_request">Curl request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5a39139048f2f813e7da1f62' -i \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b2e9e99ee1d03f5ec511972' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -565,7 +511,7 @@ Content-Length: 2270
 <h4 id="greetings-get-example_http_request">HTTP request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5a39139048f2f813e7da1f62 HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b2e9e99ee1d03f5ec511972 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -580,7 +526,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 82
 
 {
-  "id" : "5a39139048f2f813e7da1f62",
+  "id" : "5b2e9e99ee1d03f5ec511972",
   "message" : "Hello SpringOne Platform!"
 }</code></pre>
 </div>
@@ -639,8 +585,8 @@ Content-Length: 82
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">POST /greetings/ HTTP/1.1
 Content-Type: application/json
 Accept: application/json
-Host: localhost:8080
 Content-Length: 45
+Host: localhost:8080
 
 {
   "message" : "Hello SpringOne Platform!"
@@ -657,7 +603,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 82
 
 {
-  "id" : "5a39139048f2f813e7da1f62",
+  "id" : "5b2e9e99ee1d03f5ec511972",
   "message" : "Hello SpringOne Platform!"
 }</code></pre>
 </div>
@@ -669,7 +615,7 @@ Content-Length: 82
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-12-11 15:06:56 +01:00
+Last updated 2017-12-21 17:20:11 +01:00
 </div>
 </div>
 </body>
