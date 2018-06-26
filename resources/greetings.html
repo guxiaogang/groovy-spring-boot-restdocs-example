@@ -459,7 +459,7 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 838
+Content-Length: 914
 
 [ {
   "id" : "5b316639ee1d037629ff501d",
@@ -494,6 +494,9 @@ Content-Length: 838
 }, {
   "id" : "5b32363cee1d0344d488f151",
   "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b323685ee1d034637383b76",
+  "message" : "Hello Warsaw JUG!"
 } ]</code></pre>
 </div>
 </div>
@@ -508,7 +511,7 @@ Content-Length: 838
 <h4 id="greetings-get-example_curl_request">Curl request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b32363cee1d0344d488f151' -i -X GET \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b323685ee1d034637383b76' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -517,7 +520,7 @@ Content-Length: 838
 <h4 id="greetings-get-example_http_request">HTTP request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b32363cee1d0344d488f151 HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b323685ee1d034637383b76 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -532,7 +535,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 74
 
 {
-  "id" : "5b32363cee1d0344d488f151",
+  "id" : "5b323685ee1d034637383b76",
   "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
@@ -609,7 +612,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 74
 
 {
-  "id" : "5b32363cee1d0344d488f151",
+  "id" : "5b323685ee1d034637383b76",
   "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>

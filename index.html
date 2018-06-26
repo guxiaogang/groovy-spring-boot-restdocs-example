@@ -479,9 +479,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introduction"><a class="link" href="#_introduction">Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hi Warsaw Jug!</p>
-</div>
-<div class="paragraph">
 <p>The Example API is a RESTful web service that shows how Spring REST docs works.</p>
 </div>
 <div class="sect1">
@@ -629,7 +626,7 @@ that describes the problem. The error object has the following structure:</p>
 </table>
 <div class="paragraph">
 <p>For example, a request that attempts to delete on the greetings endpoint will produce a
-<code>405 Met hod Not Allowed</code> response:</p>
+<code>405 Method Not Allowed</code> response:</p>
 </div>
 <div class="sect2">
 <h3 id="overview-errors_curl_request"><a class="link" href="#overview-errors_curl_request">Curl request</a></h3>
@@ -661,7 +658,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 183
 
 {
-  "timestamp" : "2018-06-26T12:49:00.262+0000",
+  "timestamp" : "2018-06-26T12:50:12.903+0000",
   "path" : "/greetings/",
   "status" : 405,
   "error" : "Method Not Allowed",
@@ -713,7 +710,7 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 838
+Content-Length: 914
 
 [ {
   "id" : "5b316639ee1d037629ff501d",
@@ -748,6 +745,9 @@ Content-Length: 838
 }, {
   "id" : "5b32363cee1d0344d488f151",
   "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b323685ee1d034637383b76",
+  "message" : "Hello Warsaw JUG!"
 } ]</code></pre>
 </div>
 </div>
@@ -762,7 +762,7 @@ Content-Length: 838
 <h4 id="greetings-get-example_curl_request"><a class="link" href="#greetings-get-example_curl_request">Curl request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b32363cee1d0344d488f151' -i -X GET \
+<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b323685ee1d034637383b76' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -771,7 +771,7 @@ Content-Length: 838
 <h4 id="greetings-get-example_http_request"><a class="link" href="#greetings-get-example_http_request">HTTP request</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b32363cee1d0344d488f151 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b323685ee1d034637383b76 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -786,7 +786,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 74
 
 {
-  "id" : "5b32363cee1d0344d488f151",
+  "id" : "5b323685ee1d034637383b76",
   "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
@@ -863,7 +863,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 74
 
 {
-  "id" : "5b32363cee1d0344d488f151",
+  "id" : "5b323685ee1d034637383b76",
   "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
@@ -875,7 +875,7 @@ Content-Length: 74
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-06-26 14:48:52 +02:00
+Last updated 2018-06-26 14:50:14 +02:00
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
