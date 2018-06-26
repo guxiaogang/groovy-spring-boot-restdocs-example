@@ -459,10 +459,40 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
 Content-Type: application/json;charset=UTF-8
-Content-Length: 78
+Content-Length: 838
 
 [ {
-  "id" : "5b2eb053ee1d0350371c562e",
+  "id" : "5b316639ee1d037629ff501d",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b31f8feee1d03e7111faca1",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b32329dee1d033421491554",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b323510ee1d033f4bcf3769",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b323551ee1d03409a97af60",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b3235a8ee1d03422ebf0e2b",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b3235b4ee1d03426069d852",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b3235bfee1d034291c9d2f7",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b3235caee1d0342c1ab6987",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b3235d5ee1d0342f1067ae1",
+  "message" : "Hello Warsaw JUG!"
+}, {
+  "id" : "5b32363cee1d0344d488f151",
   "message" : "Hello Warsaw JUG!"
 } ]</code></pre>
 </div>
@@ -478,7 +508,7 @@ Content-Length: 78
 <h4 id="greetings-get-example_curl_request">Curl request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b2eb053ee1d0350371c562e' -i -X GET \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/greetings/5b32363cee1d0344d488f151' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -487,7 +517,7 @@ Content-Length: 78
 <h4 id="greetings-get-example_http_request">HTTP request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b2eb053ee1d0350371c562e HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /greetings/5b32363cee1d0344d488f151 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -502,7 +532,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 74
 
 {
-  "id" : "5b2eb053ee1d0350371c562e",
+  "id" : "5b32363cee1d0344d488f151",
   "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
@@ -579,7 +609,7 @@ Content-Type: application/json;charset=UTF-8
 Content-Length: 74
 
 {
-  "id" : "5b2eb053ee1d0350371c562e",
+  "id" : "5b32363cee1d0344d488f151",
   "message" : "Hello Warsaw JUG!"
 }</code></pre>
 </div>
